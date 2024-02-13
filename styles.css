@@ -1,23 +1,42 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    margin:0;
-    padding:0;
     display: flex;
     flex-direction: column;
-}
-.header , .footer{
-    height: 90px;
     background-color: #1F2937;
-    display: flex;
-    align-items: center;
 }
+.container-header-secc1{
+    height:490px;
+    margin:0 auto;  
+}
+
 .header{
-    justify-content: space-evenly;
+    display: flex ;
+    justify-content:space-between;
+    align-items: center;
+    padding: 12px 0;
 }
 .logo{
     font-size: 24px;
-    font-weight: bolder;
-    color:#F9FAF8;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    height:55px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 5px 10px;
+    color:rgb(11, 63, 105);
+    border-radius: 40px;
+    background-image: url(https://cdn.pixabay.com/photo/2019/10/17/05/49/original-4556063_1280.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+.logo:hover{
+    cursor: pointer;
 }
 .links{
     list-style: none;
@@ -29,17 +48,18 @@ body{
   font-size:18px;
   color:#E5E7EB;
 }
+
 .links li:hover{
     color:#3882F6;
     cursor: pointer;
 }
 .seccion-1{
-    height:400px;
+    margin-top: 100px;
     display: flex;
-    background-color: #1F2937;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap:86px;
+    gap:36px;
+    
 }
 .lado-izquierdo{
     display: flex;
@@ -73,6 +93,7 @@ button{
 
 .seccion-2,.seccion-3{
     height: 500px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,8 +186,11 @@ button{
     cursor: pointer;
 }
 .footer{
+    height:90px;
+    display:flex;
     margin-top: auto;
     justify-content: center;
+    align-items: center;
 }
 .cont-footer{
     color: white;
